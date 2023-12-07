@@ -81,6 +81,13 @@
      <Compile Include="Assets\Scripts\Game\Core\Fix64TanLut.cs" />
      <Compile Include="Assets\Scripts\Game\Core\Fix64SinLut.cs" />
      <Compile Include="Assets\Scripts\Game\Core\Fix64.cs" />
+     <Compile Include="Assets\Scripts\Logic\Battle\Definition\BattleConstant.FightResult.cs" />
+     <Compile Include="Assets\Scripts\Logic\Battle\POD\FightUnitPOD.cs" />
+     <Compile Include="Assets\Scripts\Logic\Common\POD\IDictionaryEnable.cs" />
+     <Compile Include="Assets\Scripts\Logic\Common\Buff\BuffTrigger\BaseBuffTrigger.cs" />
+     <Compile Include="Assets\Scripts\Logic\Common\Definition\Enum\BuffRemoveReason.cs" />
+     <Compile Include="Assets\Scripts\Logic\Common\Definition\Enum\BuffTriggerType.cs" />
+     <Compile Include="Assets\Scripts\Logic\Common\Definition\Constant\BuffConstant.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/ProgramFiles/Unity2020317f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

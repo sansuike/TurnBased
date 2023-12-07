@@ -1,18 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseBattlePOD : MonoBehaviour
+public abstract class BaseBattlePOD : IDictionaryEnable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract IDictionary ToDic();
 }
