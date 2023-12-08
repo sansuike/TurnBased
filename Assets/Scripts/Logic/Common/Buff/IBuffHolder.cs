@@ -21,6 +21,7 @@ public interface IBuffHolder
     /// <param name="searchTargetCid">SearchTarget配置id</param>
     /// <returns></returns>
     //IEnumerable<IBuffHolder> GetBuffTarget(Buff buff, int searchTargetCid);
+    IEnumerable<IBuffHolder> GetBuffTarget(Buff buff, int searchTargetCid);
 
     /// <summary>
     /// 新增buff监听

@@ -1,8 +1,11 @@
-﻿
-    using System.Collections;
-    using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 
-    public class BattleOverCommand:BaseBattleCommand
+
+    /// <summary>
+	/// 战斗结束指令
+	/// </summary>
+	public class BattleOverCommand : BaseBattleCommand
     {
         /// <summary>
         /// 持有战斗的模块id
@@ -53,14 +56,30 @@
         /// </summary>
         public string JsonOrder;
 
+        /// <summary>
+        /// 战斗单位更新
+        /// </summary>
+        public List<BattleUpdateUnitPOD> UpdateUnits;
+        
         public BattleOverCommand()
         {
-            
         }
-        
+
         public override IDictionary ToDic()
         {
             IDictionary dic = new Dictionary<string, object>();
+            dic["HolderID"] = HolderID;
+            dic["FightID"] = FightID;
+            dic["Attacker"] = Attacker;
+            dic["Defender"] = Defender;
+            dic["FightResult"] = FightResult;
+            dic["Round"] = Round;
+            dic["BattleType"] = BattleType;
+            dic["SkipBattle"] = SkipBattle;
+            dic["DmgRecords"] = DmgRecords;
+            dic["UserData"] = UserData;
+            dic["JsonOrder"] = JsonOrder;
+            dic["UpdateUnits"] = UpdateUnits;
             return dic;
         }
     }
