@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public enum BuffTimeUpdateEnum
@@ -30,4 +31,13 @@ public class DamageInfo
     public GameObject Creator;
     public GameObject Target;
     public float damage;
+}
+
+[Serializable]
+public class Property
+{
+    public float hp;
+    public float speed;
+    public float attack;
+    public float def;
 }
